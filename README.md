@@ -1,114 +1,30 @@
 # ✨ Inventory Management System
 
-A robust Inventory Management System built with **Laravel 10** and **MySQL**, designed to streamline your inventory tracking, sales, and purchasing processes.
+Overview
+The Inventory Management System is a comprehensive application designed to streamline and manage all aspects of inventory, from product details to orders and supplier information. This system provides an efficient way to handle inventory processes for businesses, making it easier to track, manage, and control stock levels.
 
-![Dashboard](https://github.com/user-attachments/assets/1df45f1d-aaed-4299-9b90-35e7f47dc7ea)
+## 🌟 Project Modules
 
-## 🗂️ Database Design
-The system is structured using a clear and efficient database schema:
+- **Products**
+  - Manage and organize product information, including details like name, SKU, price, and stock levels.
 
-![Database Diagram](https://github.com/fajarghifar/inventory-management-system/assets/71541409/0c7d4163-96f5-4724-8741-4615e52ecf98)
-
-## 🌟 Key Features
-
-- **POS (Point of Sale)**
 - **Orders**
-  - Pending Orders
-  - Complete Orders
-  - Pending Payments
+  - Track and process customer orders, including status updates, order history, and fulfillment.
+
 - **Purchases**
-  - All Purchases
-  - Approval Process
-  - Purchase Reports
-- **Products Management**
-- **Customer Records**
-- **Supplier Management**
+  - Manage purchases from suppliers, keeping track of purchase orders, received items, and payment statuses.
 
-## 🚀 Quick Start
+- **Quotations**
+  - Generate and manage quotations for customers, enabling easy reference for pricing and terms.
 
-Follow these steps to set up the project locally:
+- **Categories**
+  - Organize products into categories to improve searchability and inventory structure.
 
-1. **Clone the repository:**
+- **Units**
+  - Define and manage measurement units for products (e.g., pieces, kilograms, liters).
 
-    ```bash
-    git clone https://github.com/fajarghifar/inventory-management-system
-    ```
+- **Customers**
+  - Keep detailed records of customers, including contact information, order history, and special requirements.
 
-2. **Navigate to the project folder:**
-
-    ```bash
-    cd inventory-management-system
-    ```
-
-3. **Install PHP dependencies:**
-
-    ```bash
-    composer install
-    ```
-
-4. **Copy `.env` configuration:**
-
-    ```bash
-    cp .env.example .env
-    ```
-
-5. **Generate application key:**
-
-    ```bash
-    php artisan key:generate
-    ```
-
-6. **Configure the database in the `.env` file** with your local credentials.
-
-7. **Run database migrations and seed sample data:**
-
-    ```bash
-    php artisan migrate:fresh --seed
-    ```
-
-8. **Link storage for media files:**
-
-    ```bash
-    php artisan storage:link
-    ```
-
-9. **Install JavaScript and CSS dependencies:**
-
-    ```bash
-    npm install && npm run dev
-    ```
-
-10. **Start the Laravel development server:**
-
-    ```bash
-    php artisan serve
-    ```
-
-11. **Login using the default admin credentials:**
-
-    - **Email:** `admin@admin.com`
-    - **Password:** `password`
-
-## 🔧 Configuration
-
-### Configuring Cart Settings:
-
-- To customize tax rates, number formatting, and more, open `./config/cart.php`.
-- For more details, check out the [hardevine/shoppingcart](https://packagist.org/packages/hardevine/shoppingcart) package.
-
-## 💡 Contributing
-
-Have ideas to improve the system? Feel free to:
-
-- Submit a **Pull Request (PR)**
-- Create an **Issue** for feature requests or bugs
-
-## 📄 License
-
-Licensed under the [MIT License](LICENSE).
-
----
-
-> Find me on [GitHub](https://github.com/fajarghifar) &nbsp;&middot;&nbsp; [YouTube](https://www.youtube.com/@fajarghifar) &nbsp;&middot;&nbsp; [Instagram](https://instagram.com/fajarghifar) &nbsp;&middot;&nbsp; [LinkedIn](https://www.linkedin.com/in/fajarghifar/)
-
----
+- **Suppliers**
+  - Manage supplier information, track purchase history, and maintain relationships with vendors.
